@@ -1,0 +1,12 @@
+#!/bin/bash
+d= 'date'
+h= 'hostname'
+server_ip="$(curl ifconfig.co)"
+ip= 'hostname -I | awk '{print $1}''
+cpu= 'lscpu | grep "cpu(s):" | head -n 1 | awk "{ print $2 }"'
+echo "Today date is $d"
+echo "Hostname of the mschine is $h"
+echo "IP address of the machine $server_ip"
+echo "IP Address of the macine is $ip"
+echo "number of cpus in the machine is $cpu"
+
