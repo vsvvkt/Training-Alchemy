@@ -1,0 +1,45 @@
+
+Docker commands :-
+
+docker version
+
+docker --version
+
+rpm -qa | grep docker --> to check docker version
+
+rpm -qc (name of the package) --> to check configuration files
+
+rpm -ql (name of the package) --> to check list of files whick got modified
+
+docker pull (image name) --> to pull images
+
+docker image ls --> to get list of omages
+
+docker tag (older image name) (new image name) --> to change the name of image
+
+docker pull (image name):(tag) --> 
+
+docker image rm -f (image name) --> delete image but not copy
+
+docker image rm -f (image ID) --> to delete all copies of the image
+
+docker login --> to login to docker
+
+docker tag (Image name):(new image name):(new tag) --> to change the tag
+
+docker push (image name):(tag) --> to push the image to docker
+
+docker run -d (image name) --> to run image in background
+
+docker run --name (name) -d (name of the image) --> to specify a name to image
+
+docker run --name (name) -p 81:80 -d (image name) --> to expose container to the internet
+
+docker run --name (name) -p 81:80 -dit (image name) --> to make the container interactble
+
+docker exec -it (name / ID of the container) (required shell)
+
+docker container rm -f (name of the container) --> to remove container
+
+docker run --name -v /root/website/:/usr/local/apache2/htdocs(name) -p 81:80 -d (image name)
+

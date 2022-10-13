@@ -1,0 +1,63 @@
+[11:03 AM] Keshav (Guest)
+    ---
+ - name : Installation of Dependencies
+   hosts : all
+   become : yes
+   tasks :
+     - name : Installation of wget
+       yum :
+         name : wget
+         state : latest
+     - name : Java Installation
+       yum :
+         name : java-11-openjdk-devel
+         state : latest
+     - name : Java Installation
+       yum :
+         name : java-11-openjdk-devel
+         state : latest
+ - name : Tomcat Installation
+   hosts : all
+   tasks :
+     - name : Download the tomcat
+       get_url:
+         url : https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.82/bin/apache-tomcat-8.5.82.tar.gz
+         dest : /home/azureuser
+     - name : Untar
+       shell : "tar -xf apache-tomcat-8.5.82.tar.gz"
+     - name : start tomcat
+       shell : "sh apache-tomcat-8.5.82/bin/startup.sh"
+
+
+
+
+
+[11:21 AM] Kamal Teja (Guest)
+    ---
+- name : Installation of Dependencies
+hosts : all
+become : yes
+tasks :
+- name : Installation of wget
+yum :
+name : wget
+state : latest
+- name : Java Installation
+yum :
+name : java-11-openjdk-devel
+state : latest
+- name : Java Installation
+yum :
+name : java-11-openjdk-devel
+state : latest
+- name : Tomcat Installation
+hosts : all
+tasks :
+- name : Download the tomcat
+get_url:
+url : https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.82/bin/apache-tomcat-8.5.82.tar.gz
+dest : /home/azureuser
+- name : Untar
+shell : "tar -xf apache-tomcat-8.5.82.tar.gz"
+- name : start tomcat
+shell : "./apache-tomcat-8.5.82/bin/startup.sh start"

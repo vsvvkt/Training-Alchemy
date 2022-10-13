@@ -1,0 +1,40 @@
+---
+ - name : Webplaybook
+   hosts : all
+   become : yes
+   tasks :
+     - name : Check the date of the server
+       command : date
+     - name : check the hostname of the system
+       shell : "hostname"
+     - name : Installation of Webserver
+       yum :
+         name : httpd
+         state : latest
+     - name : Start the web service
+       service :
+         name : httpd
+         state : started
+ - name : Deployment
+   hosts : all
+   become : yes
+   tasks :
+     - name : Install wget
+       yum :
+         name : wget
+         state : latest
+     - name : Install unzip
+       yum :
+         name : unzip
+         state : latest
+     - name : Delete the older data
+       shell : "rm -rf /home/azureuser/*"
+ 
+     - name : Download the sample data from internet
+       get_url :
+         url : https://www.free-css.com/assets/files/free-css-templates/download/page283/joe-blog.zip
+         dest : /home/azureuser/
+     - name : Unzip the Downloaed template
+       shell : "unzip joe-blog.zip"
+     - name : Copy the sample data
+       shell : "sudo cp -rp joeblog/public_html/* /var/www/html/"

@@ -1,0 +1,7 @@
+Steps to install Ansible on ubuntu machine
+
+1.sudo apt-get update
+2.sudo apt-get install software-properties-common
+3.sudo apt-add-repository ppa:ansible/ansible
+4.sudo apt-get update
+5.sudo apt-get install ansible

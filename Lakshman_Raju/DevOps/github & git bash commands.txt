@@ -1,0 +1,98 @@
+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
+
+
+
+
+
+[5:39 PM] MANOJ (Guest)
+    
+  1  sudo yum update -y
+    2  clear
+    3  git --version
+    4  clear
+    5  sudo yum install git -y
+    6  clear
+    7  git --version
+    8  mkdir dir1
+    9  ls
+   10  cd dir1
+   11  git clone https://github.com/manojazure8071/mynewrepo.git
+   12  ls
+   13  cd mynewrepo
+   14  ls
+   15  mkdir git
+   16  cd git
+   17  ls -la
+   18  git init
+   19  ls -la
+   20  cd ..
+   21  mkdir git1
+   22  cd git1
+   23  git init
+   24  ls -la
+   25  clear
+   26  echo "# gitrepo1" >> README.md
+   27  git init
+   28  git add README.md
+   29  git commit -m "first commit"
+   30  git branch -M main
+   31  git remote add origin https://github.com/manojazure8071/gitrepo1.git
+   32  git push -u origin main
+   33  git branch
+   34  clear
+   35  git branch
+   36  git branch feature
+   37  git branch
+   38  git checkout feature
+   39  git branch
+   40  git checkout main
+   41  vi newfile.txt
+   42  git status
+   43  git add .
+   44  git commit -m "first file created'
+
+
+   45  git commit -m "first file created"
+   46  git push origin main
+   47  history
+ 
+
+
+
+
+[6:06 PM] MANOJ (Guest)
+     ls
+    2  cd dir1
+    3  ls
+    4  cd mynewrepo
+    5  ls
+    6  cd git1
+    7  clear
+    8  git branch
+    9  git checkout feature
+   10  git branch
+   11  ls
+   12  vi newfile1.txt
+   13  git status
+   14  git add .
+   15  git commit -m "this is new file"
+   16  vi newfile2.txt
+   17  vi newfile3.txt
+   18  git status
+   19  clear
+   20  git add .
+   21  git commit -m "new file has change and added"
+   22  git branch
+   23  git push origin feature
+   24  clear
+   25  git branch
+   26  git checkout main
+   27  git pull
+   28  ls
+   29  clear
+   30  history
+ 
+
+
+
+

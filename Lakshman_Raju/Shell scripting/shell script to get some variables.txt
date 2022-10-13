@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "Date: $(date)"
+echo "IP Address: $(hostname -I)"
+echo "IP Address: $(curl ifconfig.co)"
+echo "Hostname: $(hostname)"
+echo "Server Name: $HOSTNAME"
+echo "Server Architecture: $(uname -m)"
+echo "Last Reboot: $(last reboot|head -2)"
+echo "Number Of CPU: $(grep -c ^processor /proc/cpuinfo)"
+echo "Server Type: $(uname -r)"
