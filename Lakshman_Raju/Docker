@@ -1,3 +1,14 @@
+## docker installation
+
+#!/bin/bash
+yum install docker -y
+systemctl enable docker
+systemctl start docker
+systemctl status docker
+
+
+## Docker image creation
+
 FROM httpd
 RUN apt-get update -y
 RUN apt-get upgrade -y
