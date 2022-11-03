@@ -1,0 +1,64 @@
+Sample Project on webserver,webapp:
+
+XYZ organization is using cloud for one of their product.the project use modular componant 	modules multiple frame work and want the componant to be deployed by different teams or by 	3rd party vendor.
+
+
+	the company goal is to deliver the product update frequently to production with high quality 	and reliability they also want to accelerate the software delivery speed,quality & reduce 	feedback time between developer & Tester
+
+	as development progressed they are facing multiple problems because of various technologies 	involved in the project.
+
+
+	following are the problems
+
+	1.Building complex build is difficult
+	2.Incremental builds are difficult to manage and deploy
+
+
+	to solve this problem they need to implement CI / CD with DevOps using below tools
+
+	1.GIT
+	2.Jenkins
+	3.Docker
+	4.Ansible
+
+	Business requirement
+
+	as soon as the developer push the updated code into GIT master branch on new test server 	should be provisioned with all required software post this,the code should be containarized 	and deployed on the test server. the deployment should be build and pushed to the production 	server.this all should be deployed via automation only
+
+Project 1: Deploying webserver using above configurations
+Project 2: Deploying webapplication using above configurations
+
+
+AUTOMATION PROJECTs:
+
+Create a 2 deployment servers & 1 server having web app & other one having web server
+
+both should be accessible towards internet & also deploy the sample data on both servers 
+
+also test the both sample code in containarization environment do this activity via pipeline
+
+kindly use below tools only
+
+1. GIT & GIT hub
+
+2. Ansible
+
+3. Docker
+
+4. Jenkins
+
+NOTE :- only create a Jenkins machine manually rest things create via automation
+
+also create one project repository and in that keep all the required documents with 
+project architecture diagram
+
+Project 3: Deploying webserver using above configurations
+Project 4: Deploying webapplication using above configurations
+
+
+Assignments: 
+
+	Assignment1: Create Azure Kubernetes Service cluster and deploy a webapplication.
+
+	Assignment2: Create a Virtual Machine with all configurations in Azure using Terraform.
+
