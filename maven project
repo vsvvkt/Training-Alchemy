@@ -1,0 +1,8 @@
+
+
+sudo yum update -y
+sudo yum install java-11-openjdk.x86_64 -y
+sudo wget https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.83/bin/apache-tomcat-8.5.83.tar.gz
+sudo tar -xzf apache-tomcat-8.5.83.tar.gz
+sudo sh apache-tomcat-8.5.83/bin/startup.sh
+sudo cp -rp target/RegistrationForm.war apache-tomcat-8.5.83/webapps/ROOT.war
