@@ -1,0 +1,27 @@
+XYZ organization is using cloud for one of their product.the project use modular componant 	modules multiple frame work and want the componant to be deployed by different teams or by 	3rd party vendor.
+
+
+	the company goal is to deliver the product update frequently to production with high quality 	and reliability they also want to accelerate the software delivery speed,quality & reduce 	feedback time between developer & Tester
+
+	as development progressed they are facing multiple problems because of various technologies 	involved in the project.
+
+
+	following are the problems
+
+	1.Building complex build is difficult
+	2.Incremental builds are difficult to manage and deploy
+
+
+	to solve this problem they need to implement CI / CD with DevOps using below tools
+
+	1.GIT
+	2.Jenkins
+	3.Docker
+	4.Ansible
+
+	Business requirement
+
+	as soon as the developer push the updated code into GIT master branch on new test server 	
+	should be provisioned with all required software post this,the code should be containarized 	
+	and deployed on the test server. the deployment should be build and pushed to the production 	
+	server.this all should be deployed via automation only
