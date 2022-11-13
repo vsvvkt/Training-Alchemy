@@ -9,8 +9,6 @@ Dockerfile -
 prodserver
 
 sudo yum install httpd wget unzip -y
-
-
 sudo yum install httpd -y
 sudo systemctl enable httpd
 sudo systemctl start httpd
