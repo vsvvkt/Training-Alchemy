@@ -1,0 +1,20 @@
+On remote server
+ 
+    enable the password authentication - sudo vim /etc/ssh/sshd_config - PasswordAuthentication yes
+    Assign password to the user - sudo passwd root
+    restart the sshd service - systemctl restart sshd
+
+On host server
+  generate the ssh key - ssh-keygen
+  copy the ssh key to remote machine - ssh-copy-id root@ip of remote
+   
+On remote server
+ 
+     1. Assign the password to the user
+     2. enable the password authentication
+     3. Restart the sshd
+
+On host machine
+ 
+    1. generate the ssh key
+    2 copy the ssh key to remote machine
